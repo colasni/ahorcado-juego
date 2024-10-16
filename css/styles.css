@@ -1,0 +1,169 @@
+/* Estilos globales */
+body {
+    background-image: url("https://img.freepik.com/premium-photo/generative-ai-80s-retro-futuristic-scifi-nostalgic-90s-night-and-sunset-neon-colors-cyberpunk_93150-9351.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Arial', sans-serif;
+    color: #db2525;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Evita scroll horizontal no deseado */
+}
+
+header {
+    background-color: #141422;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra para un efecto flotante */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s; /* Transición suave */
+}
+
+nav ul li a:hover {
+    color: #ff6600;
+}
+
+/* Estilos para la sección del juego */
+section {
+    text-align: center;
+    padding: 50px;
+}
+
+h1 {
+    padding: 30px;
+    font-size: 3em;
+    color: #ff6600;
+    text-shadow: 2px 2px 5px #000000;
+    animation: fadeIn 2s ease-in-out; /* Animación de entrada */
+    
+}
+
+#game-container {
+    background-color: #282845;
+    border-radius: 15px;
+    padding: 30px;
+    display: inline-block;
+    box-shadow: 0px 0px 20px #000000;
+    transition: transform 0.3s ease; /* Animación al pasar el mouse */
+}
+
+#game-container:hover {
+    transform: scale(1.05); /* Aumenta el tamaño ligeramente */
+}
+
+#palabra {
+    font-size: 2em;
+    letter-spacing: 10px;
+    color: #00ff99;
+    text-shadow: 1px 1px 5px #000000; /* Sombra para resaltar */
+}
+
+#mensaje {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #ff3300;
+}
+
+#ahorcado {
+    margin: 20px 0;
+}
+
+#dibujo-ahorcado {
+    font-size: 1.8em;
+    color: #ffcc00;
+    text-shadow: 2px 2px 5px #000000;
+}
+
+#letras-usadas h3 {
+    color: #ffcc00;
+    font-size: 1.5em;
+    text-shadow: 1px 1px 3px #000000;
+}
+
+#letras {
+    font-size: 1.3em;
+    color: #00ffcc;
+}
+
+/* Estilo del input y botón */
+input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    margin-right: 10px;
+    background-color: #141422;
+    color: #ffffff;
+    box-shadow: 0px 0px 5px #000000; /* Sombra para el input */
+    transition: box-shadow 0.3s ease; /* Animación al enfocar */
+}
+
+input[type="text"]:focus {
+    box-shadow: 0px 0px 10px #00ffcc; /* Efecto de enfoque */
+    outline: none;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    background-color: #ff6600;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transiciones suaves */
+    box-shadow: 0px 0px 5px #000000; /* Sombra del botón */
+}
+
+button:hover {
+    background-color: #ff3300;
+    /*transform: scale(1.1); /* Aumento ligero al pasar el mouse */
+}
+
+/* Footer */
+footer {
+    margin-top: 50px;
+    background-color: #141422;
+    color: #ffcc00;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9em;
+    border-top: 2px solid #ffcc00; /* Línea superior para separar el footer */
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.3); /* Sombra superior */
+}
+
+/* Animaciones */
+@keyframes blink {
+    from { opacity: 1; }
+    to { opacity: 0.5; }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.card {
+    background-color: #000000;
+    color: rgb(0, 0, 0);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 50px;
+    text-align: center;
+}
